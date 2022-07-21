@@ -38,7 +38,7 @@ const showTodos = (project = 'defaultProject') => {
             items.splice(i,1);
             localStorage.setItem(project, JSON.stringify(items));
             cont.innerHTML = '';
-            renderTodos(project);
+            showTodos(project);
         });
 
         div.appendChild(title);
