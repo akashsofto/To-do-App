@@ -1,0 +1,174 @@
+
+html, body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    background-color:powderblue;
+}
+
+#content {
+    width: 80%;
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    grid-template-rows: 1fr 5fr;
+}
+
+.header {
+    background-color:khaki;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 24px 0px;
+    grid-column: 1 / 3;
+}
+
+.header > p {
+    color: black;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin: 0; 
+    font-size: 2em;
+    font-weight: bold;
+}
+
+/* Todo Section CSS */
+
+#todo-section {
+    grid-column: 2 / 3;
+    padding: 18px;
+    background-color:coral;
+}
+
+#todo-form {
+    display: none;
+}
+
+#todo-form > form {
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+    
+}
+
+#todo-wrapper {
+    display: flex;
+    flex-direction: column;
+    padding: 18px;
+    gap: 18px;
+}
+
+.task {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    border: 2px solid black;
+    border-radius: 15px;
+    background-color:honeydew;
+    border-color: black;
+}
+
+.task > p {
+    color: black;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+
+
+
+#project-section {
+    grid-row: 2 / 3;
+    grid-column: 1 / 2;
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+    align-items: flex-start;
+    background-color: burlywood;
+    padding: 16px;
+}
+
+#inner-project > div {
+    text-align: left;
+    width: 100%;
+    padding: 10px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+#inner-project > div:hover {
+    background-color: rgba(242, 242, 242, 0.3);
+}
+
+#inner-project > div > p {
+    margin: 0;
+    color:black;
+    font-size: 20px;
+}
+#title{
+    border: 8px solid rgba(128, 128, 128, 0.5);
+    border-radius: 15px;
+    background-color: bisque;
+}
+#description{
+    border: 8px solid rgba(128, 128, 128, 0.5);
+    border-radius: 15px;
+}
+#dueDate{
+    border: 8px solid rgba(128, 128, 128, 0.5);
+    border-radius: 15px;
+}
+#priority{
+    border: 8px solid rgba(128, 128, 128, 0.5);
+    border-radius: 15px;
+
+}
+#project-selector{
+    border: 8px solid rgba(128, 128, 128, 0.5);
+    border-radius: 15px;
+
+}
+#submit{
+    width: 100px;
+   text-align: center;
+   border: 10px solid royalblue;
+   border-radius: 15px;
+   
+  
+}
+#cancel{
+    width: 100px;
+   text-align: center;
+   border: 10px solid rgb(13, 1, 24);
+   border-radius: 15px;
+
+}
+#add{
+    width: 100px;
+   text-align: center;
+   border: 10px solid rgb(13, 1, 24);
+   border-radius: 15px; 
+}
+#btn{
+    width: 100px;
+   text-align: center;
+   border: 10px solid rgb(13, 1, 24);
+   border-radius: 15px; 
+
+}
+#project-input{
+    border: 8px solid rgba(128, 128, 128, 0.5);
+    border-radius: 15px;
+}
+#confirm{
+    width: 100px;
+   text-align: center;
+   border: 10px solid royalblue;
+   border-radius: 15px;
+   
+    margin-top: 2px;
+}
+#cancel{
+    margin-left: 2px;
+    margin-top: 2px;
+}
